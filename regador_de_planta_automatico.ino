@@ -31,28 +31,31 @@ void loop() {
   //Serial.println(analogRead(A1));
   //delay(50);
   if (analogRead(SensorDeUmidade) <= 1023 && analogRead(SensorDeUmidade) >= 601) {  // ligar a bomba d'água //umidade da terra ruim
+    delay(2000);
     digitalWrite(amarelo, LOW);
     digitalWrite(verde, LOW);
     digitalWrite(vermelho, HIGH);
 
     digitalWrite(bombadagua, HIGH);
-    delay(1500);
+    delay(2000);
   }
 
   else if (analogRead(SensorDeUmidade) <= 600 && analogRead(SensorDeUmidade) >= 501) {  // desligar a bomba d'água //umidade da terra média
+    delay(2000);
     digitalWrite(vermelho, LOW);
     digitalWrite(verde, LOW);
     digitalWrite(amarelo, HIGH);
 
     digitalWrite(bombadagua, LOW);
-    delay(1500);
+    delay(2000);
 
   } else if (analogRead(SensorDeUmidade) <= 500) {  // desligar a bomba d'água //umidade da terra boa
+    delay(2000);
     digitalWrite(amarelo, LOW);
     digitalWrite(vermelho, LOW);
     digitalWrite(verde, HIGH);
 
     digitalWrite(bombadagua, LOW);
-    delay(1500);
+    delay(2000);
   }
 }
