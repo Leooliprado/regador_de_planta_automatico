@@ -6,7 +6,7 @@
  Instagram: arduino2.0tecnologico
 
  Data de inicio do projeto 03/09/2023
- Data de término do projeto 05/05/2024  
+ Data de término do projeto 15/05/2024  
 
 ************************************************************************************************************************************
 */
