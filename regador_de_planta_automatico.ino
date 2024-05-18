@@ -28,7 +28,7 @@ void setup() {
   pinMode(bombadagua1, OUTPUT);  //pin boba d'água 5
   pinMode(bombadagua2, OUTPUT);  //pin boba d'água 6
   pinMode(bombadagua3, OUTPUT);  //pin boba d'água 9
-  analogWrite(bombadagua3,60);
+  analogWrite(bombadagua3,180);
   //Serial.begin(9600);
 }
 
